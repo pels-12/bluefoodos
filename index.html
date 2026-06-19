@@ -3,39 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodOs - Coming Soon</title>
+    <meta name="description" content="BlueFoodOS brings ordering, kitchen operations, inventory, and customer loyalty into one restaurant operating system.">
+    <title>BlueFoodOS - Restaurant Operating System</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h1>FoodOs</h1>
-        <h2>Quick Upgrade Underway</h2>
-        <p>We're currently upgrading FoodOs to serve you better.<br>Kindly stay tuned for something amazing.</p>
-        
-        <div class="countdown-container">
-            <h3>Coming Back In</h3>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-number" id="days">7</span>
-                    <span class="countdown-label">Days</span>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Primary navigation">
+            <a class="brand" href="#top" aria-label="BlueFoodOS home">
+                <span class="brand-mark">B</span>
+                <span>BlueFoodOS</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#platform">Platform</a>
+                <a href="#workflow">Workflow</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a class="nav-cta" href="#contact">Book demo</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-media" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80" alt="">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Built for food teams that move fast</p>
+                <h1>Run ordering, kitchen flow, stock, and guests from one screen.</h1>
+                <p class="hero-copy">BlueFoodOS gives restaurants and cloud kitchens a calm operating layer for the rush: live orders, prep timing, purchasing signals, customer recovery, and manager visibility.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#contact">Schedule a demo</a>
+                    <a class="button button-secondary" href="#platform">Explore platform</a>
                 </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="hours">00</span>
-                    <span class="countdown-label">Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="minutes">00</span>
-                    <span class="countdown-label">Minutes</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="seconds">00</span>
-                    <span class="countdown-label">Seconds</span>
+                <div class="hero-metrics" aria-label="Platform highlights">
+                    <span><strong>18%</strong> lower stock waste</span>
+                    <span><strong>32 min</strong> saved per shift</span>
+                    <span><strong>1</strong> daily control room</span>
                 </div>
             </div>
-        </div>
-        
-        <footer>&copy; 2026 FoodOs. All rights reserved.</footer>
-    </div>
+        </section>
+
+        <section class="dashboard-band" aria-label="Live dashboard preview">
+            <div class="dashboard-shell">
+                <div class="panel orders-panel">
+                    <div class="panel-heading">
+                        <span>Live service</span>
+                        <strong>42 active orders</strong>
+                    </div>
+                    <div class="order-row urgent">
+                        <span>Table 08</span>
+                        <strong>Jollof bowl x2</strong>
+                        <em>04:12</em>
+                    </div>
+                    <div class="order-row">
+                        <span>Delivery</span>
+                        <strong>Grilled fish platter</strong>
+                        <em>09:45</em>
+                    </div>
+                    <div class="order-row">
+                        <span>Pickup</span>
+                        <strong>Plantain stack</strong>
+                        <em>12:03</em>
+                    </div>
+                </div>
+                <div class="panel chart-panel">
+                    <div class="panel-heading">
+                        <span>Kitchen load</span>
+                        <strong>On pace</strong>
+                    </div>
+                    <div class="bars" aria-hidden="true">
+                        <span style="height: 42%"></span>
+                        <span style="height: 68%"></span>
+                        <span style="height: 54%"></span>
+                        <span style="height: 82%"></span>
+                        <span style="height: 63%"></span>
+                        <span style="height: 75%"></span>
+                    </div>
+                </div>
+                <div class="panel stock-panel">
+                    <div class="panel-heading">
+                        <span>Stock alerts</span>
+                        <strong>5 actions</strong>
+                    </div>
+                    <ul>
+                        <li><span>Rice</span><strong>Reorder today</strong></li>
+                        <li><span>Tilapia</span><strong>2.4 days left</strong></li>
+                        <li><span>Takeout bowls</span><strong>Transfer 80</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="platform">
+            <div class="section-intro">
+                <p class="eyebrow">One operating system</p>
+                <h2>Everything your team checks during service, connected.</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon">01</span>
+                    <h3>Order orchestration</h3>
+                    <p>Unify dine-in, pickup, delivery, and marketplace orders into one queue with prep-time promises that adjust as the kitchen fills.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">02</span>
+                    <h3>Inventory control</h3>
+                    <p>Track ingredient movement by recipe, flag stock risk before it slows service, and generate supplier lists from real usage.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">03</span>
+                    <h3>Guest recovery</h3>
+                    <p>Catch late orders, refunds, repeat customers, and loyalty triggers so managers know who needs attention today.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">04</span>
+                    <h3>Manager cockpit</h3>
+                    <p>Give owners a daily pulse on sales, labor, food cost, waste, channel mix, and shift notes without spreadsheet chasing.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="workflow" id="workflow">
+            <div class="workflow-copy">
+                <p class="eyebrow">Shift rhythm</p>
+                <h2>Designed around the way restaurants actually run.</h2>
+                <p>BlueFoodOS keeps the whole team aligned from prep to close, with fewer handoffs and clearer signals.</p>
+            </div>
+            <div class="workflow-steps">
+                <button class="step-tab active" type="button" data-step="prep">Prep</button>
+                <button class="step-tab" type="button" data-step="rush">Rush</button>
+                <button class="step-tab" type="button" data-step="recover">Recover</button>
+                <button class="step-tab" type="button" data-step="close">Close</button>
+            </div>
+            <div class="workflow-detail" id="workflow-detail" aria-live="polite">
+                <span>Prep board</span>
+                <h3>Start each shift with the right par levels and station plan.</h3>
+                <p>Forecast demand, confirm ingredient readiness, and assign prep tasks before orders start stacking up.</p>
+            </div>
+        </section>
+
+        <section class="section muted" id="pricing">
+            <div class="section-intro">
+                <p class="eyebrow">Simple rollout</p>
+                <h2>Start with the modules your operation needs now.</h2>
+            </div>
+            <div class="pricing-grid">
+                <article class="price-card">
+                    <h3>Launch</h3>
+                    <p>For single-location teams moving from paper and spreadsheets.</p>
+                    <strong>$149<span>/mo</span></strong>
+                    <ul>
+                        <li>Order hub</li>
+                        <li>Basic inventory</li>
+                        <li>Daily manager report</li>
+                    </ul>
+                </article>
+                <article class="price-card featured">
+                    <p class="tag">Most popular</p>
+                    <h3>Growth</h3>
+                    <p>For busy restaurants and cloud kitchens with multiple channels.</p>
+                    <strong>$299<span>/mo</span></strong>
+                    <ul>
+                        <li>Kitchen load balancing</li>
+                        <li>Recipe-level costing</li>
+                        <li>Loyalty and recovery tools</li>
+                    </ul>
+                </article>
+                <article class="price-card">
+                    <h3>Multi-site</h3>
+                    <p>For groups that need controls across branches and brands.</p>
+                    <strong>Custom</strong>
+                    <ul>
+                        <li>Multi-location reporting</li>
+                        <li>Supplier workflows</li>
+                        <li>Role-based approvals</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="calculator-copy">
+                <p class="eyebrow">Quick estimate</p>
+                <h2>Estimate monthly waste recovered.</h2>
+                <p>Use your rough monthly food spend and current waste rate to estimate savings from tighter stock control.</p>
+            </div>
+            <form class="calculator" id="calculator">
+                <label>
+                    Monthly food spend
+                    <input type="number" id="food-spend" min="0" value="12000">
+                </label>
+                <label>
+                    Current waste rate
+                    <input type="range" id="waste-rate" min="2" max="25" value="12">
+                    <span><output id="waste-output">12</output>%</span>
+                </label>
+                <div class="result">
+                    <span>Estimated recovery</span>
+                    <strong id="savings-output">$864/mo</strong>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact" id="contact">
+            <div>
+                <p class="eyebrow">See it in action</p>
+                <h2>Book a walkthrough for your food operation.</h2>
+                <p>Tell us what you run and we’ll tailor the demo around your ordering channels, kitchen flow, and stock process.</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <label>
+                    Name
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>
+                    Work email
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label>
+                    Operation type
+                    <select name="operation" required>
+                        <option value="">Select one</option>
+                        <option>Restaurant</option>
+                        <option>Cloud kitchen</option>
+                        <option>Catering</option>
+                        <option>Multi-location group</option>
+                    </select>
+                </label>
+                <button class="button button-primary" type="submit">Request demo</button>
+                <p class="form-status" id="form-status" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>BlueFoodOS</span>
+        <p>&copy; 2026 BlueFoodOS. Built for modern food operators.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
