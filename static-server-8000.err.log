@@ -1,0 +1,6 @@
+::ffff:127.0.0.1 - - [21/Jun/2026 18:52:08] "GET /website/index.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [21/Jun/2026 19:06:34] "GET /website/index.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [21/Jun/2026 19:07:15] "GET /website/index.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [21/Jun/2026 19:08:57] "GET /website/index.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [21/Jun/2026 19:10:34] "GET /website/index.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [21/Jun/2026 21:17:09] "GET /website/index.html HTTP/1.1" 200 -

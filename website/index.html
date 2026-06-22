@@ -3,146 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nigeria's fish crisis has a platform. BlueFoodOS connects 2 million smallholder farmers with technology, financing, and markets.">
-    <meta property="og:title" content="BlueFoodOS - Nigeria's Operating System for Blue Food">
-    <meta property="og:description" content="Connecting Nigerian fish farmers with technology, financing, and cold chain access.">
-    <meta property="og:image" content="/website/images/hero.jpg">
-    <title>BlueFoodOS - Nigeria's Operating System for Blue Food</title>
+    <meta name="description" content="BlueFoodOS connects fish farmers with water monitoring, feed procurement, cold chain access, financing, and bank-ready farm data.">
+    <meta property="og:title" content="BlueFoodOS - The operating system for African blue food">
+    <meta property="og:description" content="Helping fish farmers grow more, lose less, and reach better markets.">
+    <title>BlueFoodOS - Operating System for Blue Food</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation -->
-    <header>
-        <nav class="container">
-            <a href="/" class="logo">BlueFoodOS</a>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/website/platform.html">Platform</a></li>
-                <li><a href="/website/farmers.html">For Farmers</a></li>
-                <li><a href="/website/investors.html">Investors</a></li>
-                <li><a href="/website/team.html">Team</a></li>
-                <li><a href="/website/contact.html">Contact</a></li>
+<body class="home-page">
+    <header class="site-header large-site-header">
+        <div class="nav-utility">
+            <div class="container nav-utility-inner">
+                <span>For farms, buyers, lenders, and partners</span>
+                <div>
+                    <a href="mailto:info@bluefoodos.com">info@bluefoodos.com</a>
+                    <a href="/website/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <nav class="container main-nav" aria-label="Primary navigation">
+            <a href="/website/index.html" class="logo large-logo" aria-current="page">
+                <span>BlueFoodOS</span>
+                <small>Operating system for blue food</small>
+            </a>
+            
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links large-nav-links" id="navMenu">
+                <li>
+                    <a href="/website/platform.html">
+                        <span>Platform</span>
+                        <small>How it works</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="/website/farmers.html">
+                        <span>Farmers</span>
+                        <small>Join the pilot</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="/website/investors.html">
+                        <span>Investors</span>
+                        <small>Market case</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="/website/team.html">
+                        <span>Team</span>
+                        <small>Who is building</small>
+                    </a>
+                </li>
+                <li><a href="/website/farmers.html" class="nav-cta">Join Pilot</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Nigeria's fish crisis has a platform.</h1>
-            <p class="hero-subtitle">853km of coastline. $1.5 billion in fish imports. 2 million smallholder farmers working in isolation. BlueFoodOS connects them.</p>
-            <a href="/website/farmers.html" class="btn btn-primary">Join the Pilot</a>
-        </div>
-    </section>
-
-    <!-- Stats Strip -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number">$1.5B</span>
-                    <span class="stat-label">Annual Fish Imports</span>
+    <main>
+        <section class="home-hero">
+            <div class="farm-image-carousel-bg" aria-label="BlueFoodOS farm operations gallery background">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="/website/assets/images/andrew-teoh-vXjkNagrnhQ-unsplash.jpg" alt="Fish farm water monitoring">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/website/assets/images/ato-aikins-8tZcb2l0jsA-unsplash.jpg" alt="Fish farming operations">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/website/assets/images/aurelie-sgnl-xCJE12uo-E8-unsplash.jpg" alt="Cold chain storage">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/website/assets/images/bridget-adolfo-9bW69npvy0c-unsplash.jpg" alt="Feed procurement">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/website/assets/images/dan-meyers-0AgtPoAARtE-unsplash.jpg" alt="Market access">
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">853km</span>
-                    <span class="stat-label">Coastline</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">2M</span>
-                    <span class="stat-label">Smallholder Farmers</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">30-50%</span>
-                    <span class="stat-label">Post-Harvest Loss</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Problem -->
-    <section>
-        <div class="container">
-            <h2>Five gaps. One solution.</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🔍 No Monitoring</h3>
-                    <p>Fish farmers work blind. No early warning when water quality crashes and fish die.</p>
-                </div>
-                <div class="card">
-                    <h3>💰 No Financing</h3>
-                    <p>Cage kits cost ₦500K-₦2M upfront. Most farmers can't access credit without collateral.</p>
-                </div>
-                <div class="card">
-                    <h3>🎒 No Feed Access</h3>
-                    <p>Feed is 50% of production costs. Small farmers buy retail at 2-3x wholesale prices.</p>
-                </div>
-                <div class="card">
-                    <h3>❄️ No Cold Chain</h3>
-                    <p>30-50% of harvest spoils before reaching market. No refrigerated transport or storage.</p>
-                </div>
-                <div class="card">
-                    <h3>🤝 No Buyers</h3>
-                    <p>Farmers have no direct market access. Middlemen take 40% margins. No price transparency.</p>
+                <div class="carousel-overlay"></div>
+                <div class="carousel-dots-bg">
+                    <button class="dot active" aria-label="Slide 1"></button>
+                    <button class="dot" aria-label="Slide 2"></button>
+                    <button class="dot" aria-label="Slide 3"></button>
+                    <button class="dot" aria-label="Slide 4"></button>
+                    <button class="dot" aria-label="Slide 5"></button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Platform Layers -->
-    <section style="background: var(--bg-light);">
-        <div class="container">
-            <h2>Five problems. One subscription.</h2>
-            <div class="grid">
-                <div class="card" style="background: var(--white);">
-                    <h3>☀️ Solar Sensor Buoys</h3>
-                    <p><strong>2-4 hour early warning</strong> before fish mortality. Monitor dissolved oxygen, pH, temperature real-time.</p>
-                </div>
-                <div class="card" style="background: var(--white);">
-                    <h3>🏗️ HDPE Cage Kits</h3>
-                    <p><strong>Financed through harvest deductions.</strong> No upfront payment. Built with local materials.</p>
-                </div>
-                <div class="card" style="background: var(--white);">
-                    <h3>🌾 Shared Feed Procurement</h3>
-                    <p><strong>15-25% cost reduction</strong> through bulk buying consortium. Guaranteed quality.</p>
-                </div>
-                <div class="card" style="background: var(--white);">
-                    <h3>🧊 Solar+PCM Cold Chain</h3>
-                    <p><strong>Eliminates 30-50% post-harvest loss.</strong> Solar-powered, phase-change material storage.</p>
-                </div>
-                <div class="card" style="background: var(--white);">
-                    <h3>📊 Decision Support System</h3>
-                    <p><strong>Generates credit history for first-time lending.</strong> Transparent. Auditable. Bank-ready.</p>
+            <div class="container home-hero-content">
+                <div class="home-hero-copy">
+                    <p class="hero-question">What if fish farmers could</p>
+                    <div class="zoom-words" aria-label="grow more, lose less, and reach better buyers">
+                        <span>grow more</span>
+                        <span>lose less</span>
+                        <span>sell better</span>
+                    </div>
+                    <h1>BlueFoodOS helps farms move from guesswork to records, credit, and markets.</h1>
+                    <p class="hero-subtitle">
+                        Track water. Buy better feed. Keep harvests fresh. Build the proof lenders and buyers need.
+                    </p>
+                    <div class="home-actions">
+                        <a href="/website/farmers.html" class="btn btn-primary">Start as a Farmer</a>
+                        <a href="/website/platform.html" class="btn btn-secondary">Explore the Platform</a>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Social Proof -->
-    <section>
-        <div class="container" style="text-align: center;">
-            <h2>Backed by leaders in African agritech</h2>
-            <p style="margin-bottom: 2rem;">GoGettaz Agripreneur Prize 2026 Finalist • FUNAAB Research Partnership • Pilot with 50+ farmers in Lagos & Ogun State</p>
-            <a href="/website/investors.html" class="btn btn-secondary">See our traction</a>
-        </div>
-    </section>
+            <div class="scroll-indicator">
+                <button onclick="scrollDown()" aria-label="Scroll down">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
 
-    <!-- CTA -->
-    <section style="background: var(--primary); color: var(--white); text-align: center;">
-        <div class="container">
-            <h2 style="color: var(--white);">Ready to grow more fish, lose less, earn more?</h2>
-            <p style="color: rgba(255,255,255,0.9);">Join 50+ pilot farmers. Free for 30 days. No credit card required.</p>
-            <a href="/website/farmers.html" class="btn" style="background: var(--accent); color: var(--primary); font-weight: 600;">Apply now</a>
-        </div>
-    </section>
+        <section class="proof-band">
+            <div class="container proof-grid">
+                <div>
+                    <span class="proof-number">5</span>
+                    <p>Connected tools for water, feed, cold chain, buyers, and credit.</p>
+                </div>
+                <div>
+                    <span class="proof-number">30 days</span>
+                    <p>Free trial path for farmers before committing to paid support.</p>
+                </div>
+                <div>
+                    <span class="proof-number">3-6 months</span>
+                    <p>Farm records can become useful credit proof for lenders.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
+        <!-- Crisis Section -->
+        <section class="crisis-hero">
+            <div class="crisis-bg">
+                <img src="/website/assets/images/aurelie-sgnl-xCJE12uo-E8-unsplash.jpg" alt="Nigerian cage fish farm at dawn">
+            </div>
+            <div class="crisis-overlay"></div>
+            
+            <div class="container crisis-content">
+                <h2 class="crisis-headline">Nigeria's fish crisis has a platform.</h2>
+                <p class="crisis-subheadline">853km of coastline. $1.5 billion in fish imports. 2 million smallholder farmers working in isolation. BlueFoodOS connects them.</p>
+            </div>
+        </section>
+
+        <section class="home-section">
+            <div class="container split-section">
+                <div>
+                    <p class="eyebrow">The gap</p>
+                    <h2>Fish farmers cannot scale on guesswork.</h2>
+                </div>
+                <div>
+                    <p>
+                        Water quality changes fast. Feed eats profit. Cold storage is hard to find.
+                        Cages cost too much upfront. Banks need records before they lend.
+                    </p>
+                    <p>
+                        BlueFoodOS connects the missing pieces. Farmers get clearer decisions.
+                        Buyers get better supply. Lenders get records they can trust.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section platform-preview">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">One connected platform</p>
+                    <h2>Five tools working around the farmer.</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="layer-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 3c3.4 3.1 5.1 5.7 5.1 7.8a5.1 5.1 0 0 1-10.2 0C6.9 8.7 8.6 6.1 12 3Zm0 15.4c3.9-2.2 6.8-2.8 8.6-1.8M12 18.4c-3.9-2.2-6.8-2.8-8.6-1.8"/></svg>
+                        </div>
+                        <span>01</span>
+                        <h3>Water intelligence</h3>
+                        <p>Solar sensor buoys track oxygen, pH, and temperature before problems become losses.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="layer-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 8h16v11H4V8Zm3-4h10l3 4H4l3-4Zm1 7h8m-8 4h5"/></svg>
+                        </div>
+                        <span>02</span>
+                        <h3>Cage financing</h3>
+                        <p>Farmers can access stronger cages and pay through harvest deductions.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="layer-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 19V8l7-4 7 4v11H5Zm4-7h6m-6 4h6M8 8.5l4 2 4-2"/></svg>
+                        </div>
+                        <span>03</span>
+                        <h3>Feed procurement</h3>
+                        <p>Farm clusters buy together, reduce feed costs, and see input quality more clearly.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="layer-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 3v18M5 6l14 12M19 6 5 18M4 12h16"/></svg>
+                        </div>
+                        <span>04</span>
+                        <h3>Cold chain</h3>
+                        <p>Solar cold storage and transport help farmers keep more value after harvest.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="layer-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 20V4h14v16H5Zm4-11h6m-6 4h6m-6 4h3M16 17l3 3"/></svg>
+                        </div>
+                        <span>05</span>
+                        <h3>Credit history</h3>
+                        <p>Farm activity, costs, water data, and harvest records become proof for lenders.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section field-section">
+            <div class="container field-grid">
+                <div class="field-panel">
+                    <p class="eyebrow">On the farm</p>
+                    <h2>Simple enough for the farm. Clear enough for the bank.</h2>
+                    <p>
+                        A farmer needs alerts, feed support, and buyer access. A lender needs records.
+                        A buyer needs reliable supply. BlueFoodOS keeps those needs in one operating loop.
+                    </p>
+                </div>
+                <div class="record-stack" aria-label="Example BlueFoodOS farm record">
+                    <div class="record-row">
+                        <span>Water status</span>
+                        <strong>Safe</strong>
+                    </div>
+                    <div class="record-row">
+                        <span>Feed order</span>
+                        <strong>Grouped</strong>
+                    </div>
+                    <div class="record-row">
+                        <span>Harvest window</span>
+                        <strong>14 days</strong>
+                    </div>
+                    <div class="record-row">
+                        <span>Credit evidence</span>
+                        <strong>Building</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section audience-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Choose your path</p>
+                    <h2>Built for farmers, partners, and investors.</h2>
+                </div>
+                <div class="audience-grid">
+                    <article class="audience-card farmer-card">
+                        <h3>For fish farmers</h3>
+                        <p>Register, try monitoring for 30 days, access better inputs, and build a farm record.</p>
+                        <a href="/website/farmers.html" class="btn btn-primary">Join the Pilot</a>
+                    </article>
+                    <article class="audience-card">
+                        <h3>For partners</h3>
+                        <p>Work with BlueFoodOS on farmer clusters, research, cold chain, procurement, and market access.</p>
+                        <a href="/website/contact.html" class="btn btn-secondary">Start a Conversation</a>
+                    </article>
+                    <article class="audience-card investor-card">
+                        <h3>For investors</h3>
+                        <p>Back a market held back by imports, fragmented farms, and missing data.</p>
+                        <a href="/website/investors.html" class="btn btn-secondary">View Investor Page</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section operating-flow">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">How it works</p>
+                    <h2>From first registration to useful farm records.</h2>
+                </div>
+                <div class="flow-steps">
+                    <article>
+                        <span>1</span>
+                        <h3>Register</h3>
+                        <p>Farmers join by USSD, WhatsApp, or support from local clusters.</p>
+                    </article>
+                    <article>
+                        <span>2</span>
+                        <h3>Monitor</h3>
+                        <p>Sensors and records show water quality, costs, and production.</p>
+                    </article>
+                    <article>
+                        <span>3</span>
+                        <h3>Optimize</h3>
+                        <p>Farmers access feed, cold chain, buyer links, and farm support.</p>
+                    </article>
+                    <article>
+                        <span>4</span>
+                        <h3>Finance</h3>
+                        <p>Verified farm data supports lending and future expansion.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-cta">
+            <div class="container cta-inner">
+                <div>
+                    <p class="eyebrow">Early network now forming</p>
+                    <h2>Help fish farmers produce more and waste less.</h2>
+                    <p>We are speaking with farmers, buyers, lenders, cold chain operators, researchers, and investors.</p>
+                </div>
+                <div class="home-actions">
+                    <a href="/website/contact.html" class="btn btn-primary">Contact BlueFoodOS</a>
+                    <a href="/website/team.html" class="btn btn-secondary">Meet the Team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>BlueFoodOS</h4>
-                    <p>Nigeria's operating system for blue food. Connecting farmers. Closing gaps. Building prosperity.</p>
+                    <p>Operating system for African blue food. Connecting farmers, closing gaps, building prosperity.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Product</h4>
@@ -157,15 +345,15 @@
                     <ul>
                         <li><a href="/website/team.html">Team</a></li>
                         <li><a href="/website/contact.html">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailto:hello@bluefoodos.com">Email Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4>Reach Us</h4>
                     <ul>
-                        <li><a href="https://www.linkedin.com/company/bluefoodos" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://twitter.com/bluefoodos" target="_blank">Twitter/X</a></li>
-                        <li><a href="https://instagram.com/bluefoodos" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:farmers@bluefoodos.com">farmers@bluefoodos.com</a></li>
+                        <li><a href="mailto:investors@bluefoodos.com">investors@bluefoodos.com</a></li>
+                        <li><a href="tel:+2348000000000">+234 800 0000 000</a></li>
                     </ul>
                 </div>
             </div>
@@ -175,9 +363,10 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/2348000000000?text=Hello%20BlueFoodOS%2C%20I%27m%20interested%20in%20learning%20more" class="whatsapp-btn" target="_blank" title="Chat with us on WhatsApp">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.6915026,13.4744748 C17.4744531,13.3899899 16.3283589,12.8170226 16.1169733,12.7329624 C15.9055878,12.6489022 15.7515771,12.6115972 15.5975665,12.8289961 C15.4435558,13.046395 15.0274926,13.5515012 14.8892384,13.7052389 C14.7509842,13.8589766 14.6127301,13.8949651 14.3956806,13.7104773 C14.1786312,13.5259894 13.4915502,13.315722 12.6563168,12.5408834 C11.9591624,11.9213159 11.4799054,11.1561855 11.3416513,10.9386865 C11.2033971,10.7211876 11.3139001,10.6152811 11.4323744,10.4310927 C11.5384628,10.267253 11.6563168,10.0423311 11.7625622,9.91398519 C11.8688076,9.78563922 11.9274276,9.69565703 12.0456856,9.54191929 C12.1639437,9.38818155 12.1055237,9.25983558 12.0471036,9.17525268 C11.9886835,9.09066978 11.509427,8.01036449 11.3139001,7.52792048 C11.1242854,7.07378829 10.930626,6.99920539 10.7515771,6.99920539 C10.5974526,6.99920539 10.4434419,6.99920539 10.2893914,6.99920539 C10.1353808,6.99920539 9.88193904,7.05676252 9.67055344,7.27345875 C9.45916783,7.49015498 8.86304374,8.06314288 8.86304374,9.14344819 C8.86304374,10.2237535 9.68639053,11.2691094 9.79263595,11.4228471 C9.89888136,11.5765849 11.4799054,14.1661636 13.8331238,15.2173704 C14.4052722,15.5045388 14.8527055,15.6840855 15.2032718,15.8240438 C15.7753547,16.0413427 16.2940057,16.0185572 16.7124295,15.9597405 C17.1785407,15.8949651 18.1414047,15.3947834 18.3370317,14.8383191 C18.5326586,14.2818548 18.5326586,13.8118341 18.4746656,13.7104773 C18.4166727,13.6091205 18.2624214,13.5657852 18.0450663,13.4744748 Z M12.0045472,19.7374899 C10.7928902,19.7374899 9.61147401,19.4878535 8.52798846,19.0003393 L8.22227134,18.8783739 L7.86850913,18.9559922 C6.92202706,19.1616122 6.07571841,19.4320842 5.32268908,19.7582143 L5.04456,19.8745101 L5.20883618,20.1511111 C5.35060155,20.3774084 5.74549721,21.0351709 6.04260202,21.5223013 C6.34359394,22.025698 6.67107863,22.5609696 6.77349947,22.7224549 L7.04172035,23.1322221 L6.72932949,23.1968975 C5.96983916,23.349495 5.22098328,23.408356 4.49274084,23.3744869 L4.14897862,23.3576597 L3.84586556,23.0833316 C2.13931816,21.5394242 1.01523384,19.3836389 1.01523384,16.9646073 C1.01523384,12.2284988 4.80088528,8.44284736 9.53702305,8.44284736 C14.2731608,8.44284736 18.0587863,12.2284988 18.0587863,16.9646073 C18.0587863,21.7007157 14.2731608,25.4863671 9.53702305,25.4863671 Z M12.0045472,2.18411999 C6.4575788,2.18411999 1.98983886,6.65185993 1.98983886,12.1988183 C1.98983886,14.2818548 2.62136505,16.2189455 3.74543937,17.8265698 L3.10915504,21.1518055 C2.93934571,22.0626524 3.34197788,22.9735306 4.15148282,23.2810078 C4.54637849,23.4305321 4.96480226,23.4305321 5.36039598,23.2810078 L8.52798846,22.1011449 C10.0082844,22.5609696 11.4799054,22.7928022 12.0045472,22.7928022 C17.5515156,22.7928022 22.019255,18.3250628 22.019255,12.7880548 C22.019255,7.25110734 17.5515156,2.78336741 12.0045472,2.18411999 Z"/></svg>
+    <a href="https://wa.me/2348000000000?text=Hello%20BlueFoodOS%2C%20I%27d%20like%20to%20learn%20more" class="whatsapp-btn" target="_blank" title="Chat with us on WhatsApp" aria-label="Chat with BlueFoodOS on WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4C9.38 4 4 9.08 4 15.33c0 2.2.67 4.26 1.84 6l-1.2 5.04 5.35-1.14A12.7 12.7 0 0 0 16 26.67c6.62 0 12-5.08 12-11.34S22.62 4 16 4Zm0 20.48c-1.85 0-3.64-.52-5.18-1.5l-.39-.25-3.02.65.68-2.84-.27-.42a8.78 8.78 0 0 1-1.52-4.79c0-5.04 4.35-9.14 9.7-9.14s9.7 4.1 9.7 9.14-4.35 9.15-9.7 9.15Zm5.33-6.78c-.29-.14-1.72-.8-1.98-.9-.27-.1-.46-.14-.66.14-.2.28-.76.9-.94 1.08-.17.2-.35.22-.64.08-.29-.14-1.22-.42-2.32-1.36-.86-.74-1.44-1.65-1.61-1.93-.17-.28-.02-.43.13-.57.13-.13.29-.34.43-.5.14-.17.19-.28.29-.47.1-.2.05-.36-.02-.5-.07-.14-.66-1.5-.9-2.05-.24-.52-.48-.45-.66-.46h-.56c-.2 0-.5.07-.77.36-.27.28-1.01.94-1.01 2.28s1.04 2.65 1.18 2.83c.14.2 2.05 2.96 4.98 4.15.7.28 1.24.45 1.66.58.7.2 1.34.17 1.84.1.56-.08 1.72-.66 1.96-1.3.24-.63.24-1.17.17-1.3-.07-.1-.26-.17-.55-.31Z"/>
+        </svg>
     </a>
 
     <script src="script.js"></script>
